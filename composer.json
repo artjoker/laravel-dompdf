@@ -1,17 +1,17 @@
 {
-    "name": "barryvdh/laravel-dompdf",
+    "name": "artjoker/laravel-dompdf",
     "description": "A DOMPDF Wrapper for Laravel",
     "license": "MIT",
     "keywords": ["laravel", "dompdf", "pdf"],
     "authors": [
         {
-            "name": "Barry vd. Heuvel",
-            "email": "barryvdh@gmail.com"
+            "name": "VT2",
+            "email": "v.taranenko@artjoker.net"
         }
     ],
     "require": {
         "php": "^7.2 || ^8.0",
-        "dompdf/dompdf": "^2.0.3",
+        "artjoker/dompdf": "^1.0.1",
         "illuminate/support": "^6|^7|^8|^9|^10"
     },
     "require-dev": {
@@ -22,25 +22,25 @@
     },
     "autoload": {
         "psr-4": {
-            "Barryvdh\\DomPDF\\": "src"
+            "Artjoker\\DomPDF\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Barryvdh\\DomPDF\\Tests\\": "tests"
+            "Artjoker\\DomPDF\\Tests\\": "tests"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0-dev"
+            "dev-master": "1.0-dev"
         },
         "laravel": {
             "providers": [
-                "Barryvdh\\DomPDF\\ServiceProvider"
+                "Artjoker\\DomPDF\\ServiceProvider"
             ],
             "aliases": {
-                "Pdf": "Barryvdh\\DomPDF\\Facade\\Pdf",
-                "PDF": "Barryvdh\\DomPDF\\Facade\\Pdf"
+                "Pdf": "Artjoker\\DomPDF\\Facade\\Pdf",
+                "PDF": "Artjoker\\DomPDF\\Facade\\Pdf"
             }
         }
     },
