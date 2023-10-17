@@ -1,8 +1,8 @@
 <?php
 
-namespace Barryvdh\DomPDF\Tests;
+namespace Artjoker\DomPDF\Tests;
 
-use Barryvdh\DomPDF\Facade;
+use Artjoker\DomPDF\Facade;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Storage;
 
@@ -19,7 +19,7 @@ class PdfTest extends TestCase
         $this->assertEquals('application/pdf', $response->headers->get('Content-Type'));
         $this->assertEquals('attachment; filename="test.pdf"', $response->headers->get('Content-Disposition'));
     }
-    
+
     public function testAliasCaps(): void
     {
         $pdf = \PDF::loadHtml('<h1>Test</h1>');
@@ -122,7 +122,7 @@ class PdfTest extends TestCase
         /** @var Response $response */
         $response = $pdf->download('test.pdf');
 
-        $this->assertInstanceOf(\Barryvdh\DomPDF\PDF::class, $pdf);
+        $this->assertInstanceOf(\Artjoker\DomPDF\PDF::class, $pdf);
         $this->assertEquals('host', $pdf->getDomPDF()->getBaseHost());
         $this->assertEquals('host', $pdf->getBaseHost());
         $this->assertEquals('protocol', $pdf->getDomPDF()->getProtocol());

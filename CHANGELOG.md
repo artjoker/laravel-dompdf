@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.0-beta3]
 ### Changed
-- Remove the deprecated class 'Barryvdh\DomPDF\Facade' Facade in favor of Barryvdh\DomPDF\Facade\Pdf
+- Remove the deprecated class 'Artjoker\DomPDF\Facade' Facade in favor of Artjoker\DomPDF\Facade\Pdf
 - Set default Facade to Pdf instead of PDF
 
 ## [2.0.0-beta2]

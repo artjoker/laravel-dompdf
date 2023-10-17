@@ -1,6 +1,6 @@
 <?php
 
-namespace Barryvdh\DomPDF;
+namespace Artjoker\DomPDF;
 
 use Dompdf\Adapter\CPDF;
 use Dompdf\Dompdf;

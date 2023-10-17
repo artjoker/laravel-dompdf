@@ -1,9 +1,9 @@
 <?php
 
-namespace Barryvdh\DomPDF\Tests;
+namespace Artjoker\DomPDF\Tests;
 
-use Barryvdh\DomPDF\Facade\Pdf;
-use Barryvdh\DomPDF\ServiceProvider;
+use Artjoker\DomPDF\Facade\Pdf;
+use Artjoker\DomPDF\ServiceProvider;
 use Illuminate\Support\Facades\View;
 
 abstract class TestCase extends \Orchestra\Testbench\TestCase

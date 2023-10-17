@@ -1,8 +1,8 @@
 <?php
 
-namespace Barryvdh\DomPDF\Facade;
+namespace Artjoker\DomPDF\Facade;
 
-use Barryvdh\DomPDF\PDF as BasePDF;
+use Artjoker\DomPDF\PDF as BasePDF;
 use Illuminate\Support\Facades\Facade as IlluminateFacade;
 
 /**

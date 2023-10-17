@@ -14,7 +14,7 @@ Require this package in your composer.json and update composer. This will downlo
 After updating composer add the following lines to register provider in `bootstrap/app.php`
 
   ```
-  $app->register(\Barryvdh\DomPDF\ServiceProvider::class);
+  $app->register(\Artjoker\DomPDF\ServiceProvider::class);
   ```
   
 To change the configuration, copy the config file to your config folder and enable it in `bootstrap/app.php`:
@@ -28,7 +28,7 @@ To change the configuration, copy the config file to your config folder and enab
 You can create a new DOMPDF instance and load a HTML string, file or view name. You can save it to a file, or stream (show in browser) or download.
 
 ```php
-    use Barryvdh\DomPDF\Facade\Pdf;
+    use Artjoker\DomPDF\Facade\Pdf;
 
     $pdf = Pdf::loadView('pdf.invoice', $data);
     return $pdf->download('invoice.pdf');
@@ -64,7 +64,7 @@ You can also use your ConfigProvider to set certain keys.
 ### Configuration
 The defaults configuration settings are set in `config/dompdf.php`. Copy this file to your own config directory to modify the values. You can publish the config using this command:
 ```shell
-    php artisan vendor:publish --provider="Barryvdh\DomPDF\ServiceProvider"
+    php artisan vendor:publish --provider="Artjoker\DomPDF\ServiceProvider"
 ```
 
 You can still alter the dompdf options in your code before generating the pdf using this command:
